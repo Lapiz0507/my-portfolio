@@ -1,0 +1,846 @@
+/* ==============================
+   01. BASIC
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f5f3f8;
+    color: #24202d;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 1100px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* ==============================
+   02. CLEAR FLOAT
+============================== */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ==============================
+   03. HEADER
+============================== */
+
+.site-header {
+    background: #211735;
+    border-bottom: 1px solid #3d3155;
+    padding: 22px 0;
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.logo span {
+    color: #b9a5ff;
+}
+
+.main-nav {
+    float: right;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    float: left;
+    margin-left: 35px;
+}
+
+.main-nav a {
+    color: #c9c2d7;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #ffffff;
+}
+
+.main-nav a.active {
+    border-bottom: 1px solid #b9a5ff;
+    padding-bottom: 6px;
+}
+
+
+/* ==============================
+   04. HERO
+============================== */
+
+.hero {
+    background: #211735;
+    color: white;
+    padding: 90px 0 100px;
+}
+
+.hero-text {
+    float: left;
+    width: 55%;
+    padding-top: 45px;
+}
+
+.small-title {
+    color: #8975c2;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 0 0 15px;
+}
+
+.hero .small-title {
+    color: #b9a5ff;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    font-weight: normal;
+    margin: 0 0 25px;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #b9a5ff;
+}
+
+.hero-description {
+    color: #c7c1d0;
+    max-width: 500px;
+    font-size: 15px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.button-main {
+    background: #b9a5ff;
+    color: #211735;
+}
+
+.button-main:hover {
+    background: #ffffff;
+}
+
+.button-outline {
+    color: white;
+    border-color: #665b7b;
+    margin-left: 8px;
+}
+
+.button-outline:hover {
+    border-color: #ffffff;
+}
+
+
+/* HERO IMAGE */
+
+.hero-image {
+    float: right;
+    width: 38%;
+}
+
+.image-frame {
+    border: 1px solid #5b4d73;
+    padding: 12px;
+}
+
+.image-frame img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    filter: grayscale(20%);
+}
+
+.image-note {
+    color: #777083;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-top: 12px;
+}
+
+
+/* ==============================
+   05. SECTION GENERAL
+============================== */
+
+.features {
+    padding: 90px 0;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+
+/* ==============================
+   06. FEATURE CARDS
+============================== */
+
+.feature-card {
+    float: left;
+    width: 31.33%;
+    margin-right: 3%;
+    min-height: 245px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #ded9e6;
+}
+
+.feature-card:last-child {
+    margin-right: 0;
+}
+
+.feature-number {
+    color: #8975c2;
+    font-size: 12px;
+    margin-bottom: 35px;
+}
+
+.feature-card h3 {
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+.feature-card p {
+    color: #686271;
+    font-size: 13px;
+}
+
+.feature-card a {
+    color: #5d4b91;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   07. STATISTICS
+============================== */
+
+.statistics {
+    background: #302346;
+    color: white;
+    padding: 40px 0;
+}
+
+.stat-item {
+    float: left;
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #514568;
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.stat-item strong {
+    display: block;
+    color: #c5b5ff;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.stat-item span {
+    color: #bdb5c8;
+    font-size: 11px;
+}
+
+
+/* ==============================
+   08. PAGE INTRO
+============================== */
+
+.page-intro {
+    background: #211735;
+    color: white;
+    padding: 75px 0;
+}
+
+.page-intro h1 {
+    margin: 0;
+    font-size: 52px;
+    line-height: 1.05;
+    font-weight: normal;
+}
+
+.page-intro h1 span {
+    color: #b9a5ff;
+}
+
+
+/* ==============================
+   09. ABOUT
+============================== */
+
+.about-section {
+    padding: 80px 0;
+}
+
+.profile-card {
+    float: left;
+    width: 30%;
+    background: #ffffff;
+    border: 1px solid #ddd7e6;
+    padding: 25px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.profile-label {
+    color: #8975c2;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin: 25px 0 5px;
+}
+
+.profile-card h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.profile-job {
+    color: #77707f;
+    font-size: 13px;
+}
+
+.social-links {
+    border-top: 1px solid #e4e0e8;
+    margin-top: 25px;
+    padding-top: 18px;
+}
+
+.social-links a {
+    display: block;
+    color: #5d4b91;
+    font-size: 12px;
+    margin: 7px 0;
+}
+
+
+.about-content {
+    float: right;
+    width: 65%;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1.15;
+    margin: 0 0 20px;
+}
+
+.about-content h2 span {
+    color: #6e58a8;
+}
+
+.about-text {
+    color: #625c68;
+    font-size: 14px;
+    max-width: 700px;
+}
+
+
+/* INFO LIST */
+
+.info-list {
+    margin-top: 35px;
+    border-top: 1px solid #d9d3df;
+}
+
+.info-row {
+    padding: 13px 0;
+    border-bottom: 1px solid #d9d3df;
+}
+
+.info-row span {
+    float: left;
+    width: 35%;
+    color: #77717d;
+    font-size: 12px;
+}
+
+.info-row strong {
+    float: right;
+    width: 65%;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: right;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    margin-top: 55px;
+}
+
+.timeline-item {
+    border-left: 2px solid #b9a5ff;
+    padding: 0 0 25px 25px;
+    margin-left: 5px;
+}
+
+.timeline-item > span {
+    color: #6e58a8;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.timeline-item h3 {
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+.timeline-item p {
+    color: #6c6671;
+    font-size: 13px;
+    margin: 0;
+}
+
+
+/* ==============================
+   10. SKILLS
+============================== */
+
+.skills-section {
+    padding: 80px 0;
+}
+
+.skills-intro {
+    float: left;
+    width: 25%;
+}
+
+.skills-intro h2 {
+    font-size: 35px;
+    line-height: 1.1;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+.skills-intro > p:last-child {
+    color: #706a76;
+    font-size: 13px;
+}
+
+.skills-grid {
+    float: right;
+    width: 70%;
+}
+
+.skill-card {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 25px;
+    padding: 25px;
+    background: white;
+    border: 1px solid #ddd7e6;
+    min-height: 180px;
+}
+
+.skill-card:nth-child(2n) {
+    margin-right: 0;
+}
+
+.skill-top {
+    margin-bottom: 12px;
+}
+
+.skill-top span {
+    color: #8975c2;
+    font-size: 10px;
+    margin-right: 15px;
+}
+
+.skill-top strong {
+    font-size: 16px;
+}
+
+.skill-card p {
+    color: #77717d;
+    font-size: 12px;
+}
+
+.progress {
+    width: 100%;
+    height: 5px;
+    background: #e7e2ed;
+    margin-top: 20px;
+}
+
+.progress-fill {
+    height: 5px;
+    background: #7460a9;
+}
+
+.width-85 {
+    width: 85%;
+}
+
+.width-80 {
+    width: 80%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.progress-number {
+    text-align: right;
+    color: #7460a9;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+
+/* SOFT SKILLS */
+
+.soft-skills {
+    margin-top: 70px;
+    border-top: 1px solid #d8d2df;
+    padding-top: 50px;
+}
+
+.soft-heading {
+    float: left;
+    width: 25%;
+}
+
+.soft-heading h2 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.soft-card {
+    float: left;
+    width: 23%;
+    margin-right: 2.66%;
+    background: #302346;
+    color: white;
+    padding: 25px;
+    min-height: 150px;
+}
+
+.soft-card:last-child {
+    margin-right: 0;
+}
+
+.soft-card span {
+    color: #b9a5ff;
+    font-size: 10px;
+}
+
+.soft-card h3 {
+    font-size: 15px;
+    margin: 20px 0 8px;
+}
+
+.soft-card p {
+    color: #bdb6c8;
+    font-size: 11px;
+}
+
+
+/* ==============================
+   11. CONTACT
+============================== */
+
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact-info {
+    float: left;
+    width: 40%;
+    padding-right: 50px;
+}
+
+.contact-info h2 {
+    font-size: 35px;
+    font-weight: normal;
+    line-height: 1.15;
+}
+
+.contact-info > p:not(.small-title) {
+    color: #706a76;
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #ddd7e6;
+}
+
+.contact-icon {
+    float: left;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: #302346;
+    color: #c4b5ff;
+    margin-right: 15px;
+}
+
+.contact-item small {
+    display: block;
+    color: #817b87;
+    font-size: 10px;
+}
+
+.contact-item strong {
+    font-size: 13px;
+    font-weight: normal;
+}
+
+
+.contact-form {
+    float: right;
+    width: 55%;
+    background: white;
+    border: 1px solid #ddd7e6;
+    padding: 35px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #514b58;
+    font-size: 11px;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #d9d3df;
+    background: #faf9fb;
+    padding: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #8975c2;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.half:last-child {
+    margin-right: 0;
+}
+
+
+/* ==============================
+   12. MAP
+============================== */
+
+.map-section {
+    padding-bottom: 80px;
+}
+
+.map-title {
+    margin-bottom: 25px;
+}
+
+.map-title h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.map-box {
+    border: 1px solid #d9d3df;
+    padding: 8px;
+    background: white;
+}
+
+
+/* ==============================
+   13. FOOTER
+============================== */
+
+.site-footer {
+    background: #211735;
+    color: #91889e;
+    text-align: center;
+    padding: 25px;
+    font-size: 11px;
+}
+
+
+/* ==============================
+   14. RESPONSIVE
+============================== */
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        max-width: 88%;
+    }
+
+    .logo,
+    .main-nav {
+        float: none;
+        text-align: center;
+    }
+
+    .main-nav {
+        margin-top: 20px;
+    }
+
+    .main-nav li {
+        float: none;
+        display: inline-block;
+        margin: 0 8px;
+    }
+
+    .hero-text,
+    .hero-image {
+        float: none;
+        width: 100%;
+    }
+
+    .hero-text {
+        padding-top: 0;
+        margin-bottom: 50px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .feature-card {
+        float: none;
+        width: 100%;
+        margin: 0 0 15px;
+    }
+
+    .stat-item {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+    .profile-card,
+    .about-content,
+    .skills-intro,
+    .skills-grid,
+    .contact-info,
+    .contact-form {
+        float: none;
+        width: 100%;
+    }
+
+    .profile-card {
+        margin-bottom: 40px;
+    }
+
+    .skills-intro {
+        margin-bottom: 40px;
+    }
+
+    .soft-heading {
+        float: none;
+        width: 100%;
+    }
+
+    .soft-card {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+
+    .contact-info {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .half {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .page-intro h1 {
+        font-size: 42px;
+    }
+}
